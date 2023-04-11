@@ -44,6 +44,7 @@
                 <div class="row bg_login">
                     <div class="col-sm-6">
                         <?php include 'code_include/form_login.php'; ?>
+                    
                     </div>
                 </div>
                 <!-- Login Form End -->

@@ -22,7 +22,33 @@
     <!-- Topbar Start -->
     <?php include 'code_include/topbar.php'; ?>
     <!-- Topbar End -->
-    
+    <?php
+        
+
+        
+        if (!isset($firstNameErr)) $firstNameErr='first';
+        if (!isset($lastNameErr )) $lastNameErr ='first';
+        if (!isset($phoneErr )) $phoneErr ='first';
+        if (!isset($emailErr )) $emailErr ='first';
+        if (!isset($passwordErr )) $passwordErr ='first';
+        if (!isset($password2Err )) $password2Err ='first';
+        
+    //     echo '<pre/>
+    //     <span>
+    //     ';
+    //     print_r($phoneErr);
+    //     echo '</span>
+    // <pre/>';
+    //     if(isset($_SESSION)) {
+    //         echo '<pre/>
+    //         <span>
+    //         ';
+    //         print_r($_SESSION);
+    //         echo '</span>
+    //     <pre/>';
+
+    //     }
+    ?>
     <div class="container-fluid">
         <div class="row border-top px-3">
             <div class="col-lg-12">
@@ -54,6 +80,6 @@
     </div>
 
     <!-- ======= Scripts ====== -->
-    <script src="View/script/user_navbar.js"></script>>
+    <script src="View/script/user_navbar.js"></script>
 </body>
 </html>
