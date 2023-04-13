@@ -20,11 +20,13 @@
                 class="nav-item nav-link <?php echo ($page == 'login_manager') ? 'active' : ''; ?>">Quản Trị Viên</a>
         </div>
         <div class="navbar-nav ml-auto nav_main">
-            <div>
                 <?php
                     if (isset($_SESSION['phone']) && isset($_SESSION['name'])) {
                       
-                        echo ' <a href="index.php?controller=guest&action=profile" class="nav-item nav-link">
+                        echo '
+            <div>
+                        
+                        <a href="index.php?controller=guest&action=profile" class="nav-item nav-link">
                         <div style="display: inline-block;">
                         <div style="display: inline-block; margin-right: 10px;">
                         <img src="View/images/avt_user.jpg" 
@@ -37,28 +39,39 @@
                         </div>
                         </div>
                     </a>
+            </div>
+            <div>
+            <a href="index.php?controller=user&action=logout" class="nav-item nav-link">
+            <i class="bi bi-box-arrow-right text-dark"></i>
+            Đăng xuất
+            </a>
+        </div>
                     ';
                     }
                     
                     else {
                         echo '
+            <div>
+
                         <a href="index.php?controller=guest&action=login" class="nav-item nav-link">
                         <i class="bi bi-person text-dark"></i>
                         Đăng Nhập
+                        </div>
                     </a>
-                        ';
+                    <div>
+                    <a href="index.php?controller=guest&action=signup" class="nav-item nav-link">
+                    <i class="bi bi-box-arrow-right text-dark"></i>
+                    Đăng ký
+                    </a>
+                </div>
+                        
+            ';
                     }
                     
                     
                     
                     ?>
-            </div>
-            <div>
-                <a href="index.php?controller=user&action=logout" class="nav-item nav-link">
-                <i class="bi bi-box-arrow-right text-dark"></i>
-                Đăng xuất
-                </a>
-            </div>
+           
         </div>
     </div>
 </nav>
