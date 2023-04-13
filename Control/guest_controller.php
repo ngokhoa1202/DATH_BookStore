@@ -41,7 +41,7 @@
 
         function signup() {
             //include model
-            echo '<h1>Flag</h1>';
+           
             include_once('model/customer_db.php');
            
             if (isset($_POST['firstname']) && isset($_POST['lastname']) &&
@@ -71,13 +71,11 @@
                         
                     }
                     else {
-                        echo 'Error Page';
+                     
                         $this->render('View/html/UI_guest/signup', $errArr);
 
                     }
                     //    if have error, go back to signup page and display warning
-
-                    echo 'first Page';
 
                     $this->render('View/html/UI_guest/signup', $errArr);
 

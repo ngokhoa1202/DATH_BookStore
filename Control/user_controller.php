@@ -29,10 +29,7 @@
             }
             else {
                 //if not filled form yet
-                echo '<pre/>';
-                print_r($_SESSION);
                 
-                echo '<pre/>';
                 $data = array('loginErr' => 'first');
                 $this->render('View/html/UI_guest/login', $data);
             }
@@ -78,7 +75,7 @@
                     }
                     //    if have error, go back to signup page and display warning
 
-                    echo 'first Page';
+                
 
                     $this->render('View/html/UI_guest/signup', $errArr);
 
